@@ -1,7 +1,7 @@
 package com.techcielo.sprhn.repository;
 
 import com.techcielo.sprhn.bean.CategoryBean;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface CategoryRepo extends CrudRepository<CategoryBean,Integer>{
+public interface CategoryRepo extends JpaRepository<CategoryBean,Integer> {
 }

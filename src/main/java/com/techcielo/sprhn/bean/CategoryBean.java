@@ -14,6 +14,14 @@ public class CategoryBean{
 	@Column(name="CategoryName")
 	private String name;
 
+	public CategoryBean(){
+	}
+
+	public CategoryBean(Integer id,String name){
+		this.id=id;
+		this.name=name;
+	}
+
 	public Integer getId() {
 		return id;
 	}
@@ -34,4 +42,5 @@ public class CategoryBean{
 	public String toString() {		
 		return id+":"+name;
 	}
+
 }
